@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+.container{
+    width:207vh;
+    height:100vh;
+}
+.navbar{
+    background-color: black;
+    display :flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.leftnav{
+    display: flex;
+    gap:20px;
+}
+.leftnav img:nth-child(2){
+    width:90px;
+}
+.centernav{
+    width:60%;
+    display:flex;
+    justify-content: center;
+}
+.centernav > input{
+    background-color:black;
+    width: 60%;
+    padding: 6px;
+    font-size:17px ;
+    border:none;
+    border-radius: 20px;
+    width: 55%;
+    padding:7 px 15 px;
+    border :1px solid #222222
+}
