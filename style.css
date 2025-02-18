@@ -1,40 +1,110 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
 
+.container {
+    width: 100%;
+    height: 100vh;
 }
-.container{
-    width:207vh;
-    height:100vh;
-}
-.navbar{
+
+.navbar {
     background-color: black;
-    display :flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
+    width: 100%;
 }
-.leftnav{
+
+.leftnav {
     display: flex;
-    gap:20px;
+    gap: 20px;
 }
-.leftnav img:nth-child(2){
-    width:90px;
+
+.leftnav img:nth-child(2) {
+    width: 90px;
 }
-.centernav{
-    width:60%;
-    display:flex;
+
+.centernav {
+    flex: 1; 
+    display: flex;
     justify-content: center;
 }
-.centernav > input{
-    background-color:black;
-    width: 60%;
-    padding: 6px;
-    font-size:17px ;
-    border:none;
+
+.centernav > input {
+    background-color: black;
+    width: 50%;
+    padding: 8px 15px;
+    font-size: 17px;
+    border: none;
+    border: 1px solid #303030;
+    border-radius: 20px 0 0 20px; 
+    color: white; 
+}
+
+.centernav img:nth-child(2) {
+    padding: 8px 15px;
+    background-color: #222222;
+    border-radius: 0 20px 20px 0; 
+    cursor: pointer;
+}
+
+.centernav img:nth-child(3) {
+    margin-left: 10px;
+}
+
+
+.rightnav {
+    display: flex;
+    gap: 20px;
+}
+
+.rightnav img:nth-child(3) {
+    width: 30px;
+    border-radius: 50%;
+}
+
+.ytpremium{
+    font-family: Roboto,Arial,sans-serif;
+    height:61%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap:50px;
+    margin-top: 100px;
+
+}
+.ytdesc >h2{
+    font-family: Roboto,Arial,sans-serif;
+   text-align: center;
+   font-weight: lighter;
+   font-size: 40px;
+   line-height: normal;
+
+}
+.premiumDetails{
+    display :flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.premiumDetails > button{
+    padding: 10px 15px;
     border-radius: 20px;
-    width: 55%;
-    padding:7 px 15 px;
-    border :1px solid #222222
+    width:40%;
+    border:none;
+    font-weight: 600;
+    background-color: #3ea6ff;
+}
+.premiumDetails p:nth-child(2){
+    font-size: 25px;
+    font-weight: lighter;
+}
+.annual{
+    color: #76c4ff;
 }
